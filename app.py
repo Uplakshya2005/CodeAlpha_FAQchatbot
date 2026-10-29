@@ -120,6 +120,31 @@ html, body, [class*="css"] {
     font-weight: 700;
     font-size: 12px;
 }
+/* Chat input border colour */
+[data-testid="stChatInput"] {
+    border: 3px solid #00BFFF !important;
+    border-radius: 18px !important;
+    background-color: #FFFFFF !important;
+}
+
+/* Typed question */
+[data-testid="stChatInput"] textarea {
+    color: #111111 !important;
+    -webkit-text-fill-color: #111111 !important;
+    caret-color: #00BFFF !important;
+}
+
+/* Placeholder */
+[data-testid="stChatInput"] textarea::placeholder {
+    color: #64748B !important;
+    opacity: 1 !important;
+}
+
+/* Border when clicked */
+[data-testid="stChatInput"]:focus-within {
+    border-color: #00BFFF !important;
+    box-shadow: 0 0 0 2px rgba(0, 191, 255, 0.2) !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
